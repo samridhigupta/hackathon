@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="16px"
+    android:paddingRight="16px"
+    android:paddingTop="16px"
+    android:paddingBottom="16px"
+    android:background="@drawable/backrepeat"
+    android:orientation="vertical"
+    tools:context=".EnterCodeActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200px"
+        android:id="@+id/imageView"
+        android:src="@drawable/logopic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/color_dark2"
+        android:text="Enter the unique code to donate\n a meal to those in need"
+        android:id="@+id/textView2"
+        android:textSize="50px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:textSize="60px"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:alpha="0.65"
+        android:textColorHint="@color/color_dark2"
+        android:layout_marginTop="70dp"
+        android:id="@+id/editText3"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:hint="Enter donation code"
+        android:focusable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="46dp"
+        android:text="Validate code"
+        android:id="@+id/button3"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText3"
+        android:onClick="validate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30px"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:id="@+id/tv"
+        />
+
+    <Button
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:textSize="30px"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:text="Discover Restaurants"
+        android:id="@+id/button"
+        android:layout_below="@+id/editText3"
+        android:background="@color/color_light4"
+        android:onClick="discover"
+    />
+
+</LinearLayout>

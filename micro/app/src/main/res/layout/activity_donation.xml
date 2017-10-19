@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16px"
+    android:paddingRight="16px"
+    android:paddingTop="16px"
+    android:paddingBottom="16px"
+    android:layout_height="match_parent" android:background="@drawable/backrepeat" android:fitsSystemWindows="true"
+    tools:context="com.hackathon.google.micro.DonationActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200px"
+        android:id="@+id/imageView"
+        android:src="@drawable/logopic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:text="Donate Meals"
+        android:id="@+id/textView"
+        android:layout_below="@+id/textview"
+        android:textColor="@color/color_dark2"
+        android:textSize="38dp" />
+
+    <EditText
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:textSize="90px"
+        android:alpha="0.65"
+        android:textColorHint="@color/color_dark2"
+        android:layout_marginTop="70dp"
+        android:inputType="number"
+        android:hint="# of meals"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:text="Donate"
+        android:id="@+id/button"
+        android:onClick="donate"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30px"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:id="@+id/tv"
+        />
+    <Button
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:textSize="30px"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:text="Discover Restaurants"
+        android:id="@+id/button1"
+        android:background="@color/color_light4"
+        android:onClick="discover"
+        />
+
+</LinearLayout>
